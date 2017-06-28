@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.main {
+    margin: 50px;
+}
+
+.main>.row, .main>.row>.m4>.row {
+    margin-bottom: 0px;
+}
+
+.run-container {
+    text-align: center;
+}
+
+#btn_run {
+    width: 50%;
+}

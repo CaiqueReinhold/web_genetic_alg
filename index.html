@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Traveling Salesman Genetic Algoritms</title>
+    <meta name="author" content="Caique Reinhold">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="build/style.css">
+</head>
+
+<body>
+    <div class="main card-panel">
+        <div class="row">
+            <div class="col s12 m8 svg-container">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                </svg>
+            </div>
+            <div class="col s12 m4">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="number" id="n_cities">
+                        <label class="active" for="n_cities">Number of Cities</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="generation_count" type="number">
+                        <label class="active" for="generation_count">Generations</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="population_size" type="number">
+                        <label class="active" for="population_size">Population</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="tournament_count" type="number">
+                        <label class="active" for="tournament_count">Tournaments</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="elite_retain" type="number">
+                        <label class="active" for="elite_retain">Elite Retain</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="mutation_rate" type="number">
+                        <label class="active" for="mutation_rate">Mutation Rate</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <select id="mutation_type">
+                            <option value="1" selected>Single Gene</option>
+                            <option value="2">Sub Route</option>
+                        </select>
+                        <label>Mutation Type</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="nn_fill_count" type="number">
+                        <label class="active" for="nn_fill_count">Greedy Fill</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="permutations" type="number">
+                        <label class="active" for="permutations">Local Search Permutations</label>
+                    </div>
+                    <div class="col s12 run-container">
+                        <a id="btn_run" class="waves-effect waves-light btn-large">Run</a>
+                    </div>
+                    <div class="col s12">
+                        <p class="output"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="build/main.bundle.js"></script>
+</body>
+
+</html>
